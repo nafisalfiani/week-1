@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <h2>Register Now!</h2>
+    <a href="latihan1.html">Kembali ke homepage</a>
+    <div class="form-register">
+      <form action="latihan1.html">
+        <label for="fullname">Fullname</label>
+        <input type="text" name="fullname" placeholder="Ex. Yoyo Ojo" /><br />
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Ex. razor" /><br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Min 8 Character"
+        /><br />
+        <label for="address">Address</label>
+        <textarea name="address" cols="30" rows="5"></textarea><br />
+        <label for="city">City</label>
+        <select name="city">
+          <option>Bogor</option>
+          <option>Jakarta</option>
+          <option>Semarang</option>
+          <option>Bali</option>
+          <option>Bandung</option>
+        </select>
+
+        <!-- 
+                form dikirim dari fronend ->
+                form.name == city => simpan ke database city
+                form.name == address => simpan ke database address
+             -->
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <!-- <input type="submit" value="Submit 2"> -->
+      </form>
+    </div>
+    <br />
+
+    <!-- Colspan = merge ke horizontal -->
+    <!-- Rowspan = merge ke vertical -->
+    <div class="table-register">
+      <table border="1">
+        <thead>
+          <tr>
+            <th rowspan="2">Fullname</th> 
+            <th colspan="2">Data Login</th> 
+            <th rowspan="2">Address</th>
+            <th rowspan="2">City</th>
+          </tr>
+          <tr>
+            <th>Username</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Han</td>
+            <td>Han23</td>
+            <td>password123</td>
+            <td>jl.kampung</td>
+            <td>Bogor</td>
+          </tr>
+          <tr>
+            <td>Han</td>
+            <td>Han23</td>
+            <td>password123</td>
+            <td>jl.kampung</td>
+            <td>Bogor</td>
+          </tr>
+          <tr>
+            <td>Han</td>
+            <td>Han23</td>
+            <td>password123</td>
+            <td>jl.kampung</td>
+            <td>Bogor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

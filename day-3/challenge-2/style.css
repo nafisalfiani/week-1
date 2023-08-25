@@ -1,0 +1,190 @@
+/* Body styling */
+
+body {
+    background-color: #f0f0f0;
+    /* Remove default margin and padding */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    list-style: none;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    box-shadow: -2px 6px 11px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 6px 11px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 6px 11px -3px rgba(0, 0, 0, 0.75);
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+/* Add some padding to elements */
+
+.profile-info {
+    padding: 20px;
+    background-color: white;
+    /* White background for sections */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Add space between sections */
+}
+
+.section,
+.heading,
+.form-register {
+    padding: 20px;
+    background-color: white;
+    /* White background for sections */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Add space between sections */
+}
+
+
+/* Style the table */
+
+.info-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+    /* Remove table borders */
+}
+
+.info-table th,
+.info-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #f2f2f2;
+}
+
+
+/* Flex layout for arranging sections */
+
+.profile-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.profile-section {
+    flex-basis: 50%;
+    /* Half width on larger screens */
+    display: flex;
+}
+
+.profile-picture {
+    flex-basis: 30%;
+    /* Adjust the width as needed */
+    padding: 10px;
+}
+
+.profile-picture img {
+    max-width: 100%;
+}
+
+.profile-details {
+    flex-basis: 70%;
+    /* Adjust the width as needed */
+    padding: 10px;
+}
+
+
+/* Adjust width of the table column */
+
+.info-column {
+    flex-basis: 50%;
+    /* Half width on larger screens */
+}
+
+
+/* Custom styling */
+
+.section h3,
+.section p {
+    margin: 0;
+    padding: 0;
+}
+
+.section button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.form-register {
+    background-color: white;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 5px;
+}
+
+.form-register label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-register input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-register button[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    width: 100%;
+    /* Button takes full width */
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* Adjust layout for screens with a maximum width of 768px (tablets) */
+
+
+/* Adjust layout for screens with a maximum width of 768px (tablets) */
+
+@media only screen and (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
+    }
+    .profile-picture,
+    .profile-details {
+        flex: 1;
+        /* Make both elements take full width within their container */
+    }
+}
+
+
+/* Adjust layout for screens with a maximum width of 400px (mobile) */
+
+@media only screen and (max-width: 400px) {
+    .navbar {
+        text-align: center;
+    }
+    body {
+        flex-basis: 100%;
+    }
+}
